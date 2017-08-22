@@ -1,0 +1,63 @@
+<!doctype html>
+
+<meta charset="utf-8">
+<script src="http://distill.pub/template.v1.js"></script>
+<!--
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+-->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+<script type="text/front-matter">
+  title: "Computational Graph Language"
+	description: "A quick treatise on the concept of computational graph language and how it can be used to compute partial derivatives for classic gradient descent in machine learning"
+	authors:
+		- Reginald Carey: http://ReggieCarey.github.io
+	affiliations:
+		- The MITRE Corporation : http://mitre.org
+		- University of Maryland College Park : http://umd.edu
+</script>
+
+<dt-article class="l-page">
+  <h1>Computational Graph Language</h1>
+
+	<p>This article is an attempt to describe for my own edification and learning 
+	the concepts behind using a graph language to compute partial derivatives.  
+	I draw on classroom slides from <dt-cite key="Srihari2017"></dt-cite>. 
+	His work describes the basics of what is involved in the process and how it 
+	can be used in the process of machine learning.</p>
+
+	<p>This data is critical to the understanding of automatic differentiation 
+	that occurs in frameworks such as Tensorflow and Theano.</p>
+
+<dt-code block language="javascript">
+var x= 25;
+function(x) {
+	return x * x;
+}
+</dt-code>
+
+  $$\sigma(z) = \frac{1}{1+e^{-z}}$$
+
+</dt-article>
+
+<dt-appendix>
+	<h3>Appendix Section Title</h3>
+	<p>section content</p>
+	<h4>Acknowledgements</h4>
+	<h4>Author Contributions</h4>
+</dt-appendix>
+
+<script type="text/bibliography">
+	@article{Srihari2017,
+		title = {Deep Learning : Computational Graphs},
+		author = {Srihari, S.N.},
+		pages = {1--15},
+		year = {2017},
+		url={http://www.cedar.buffalo.edu/~srihari/CSE676/ComputationalGraphs.pdf}
+	}
+</script>
+
