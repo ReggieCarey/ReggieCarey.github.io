@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>GANS: Design and Training of Generative Adversarial Networks</title>
+  </head>
+  <body>
+<div class="container">
+    <h3>CMSC 727 - Research Project Results<br><small>
+      Design and Training of Generative Adversarial Networks
+    </small></h3>
+    
+<!-- <strong>AUTHORS :</strong><br>
+<blockquote>
+&nbsp;&nbsp;&nbsp;&nbsp;Reginald Carey - rbcarey@umd.edu<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Shouvanik Chakrabarti - shouv@cs.umd.edu<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Cem Unsal - cem@umd.edu<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Shaopeng Zhu - szhu@terpmail.umd.edu<br>
+</blockquote>
+ -->
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" id="a-tab" data-toggle="tab" role="tab" href="#a">Baseline</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="b-tab" data-toggle="tab" role="tab" href="#b">Sigmoid Experiment</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="c-tab" data-toggle="tab" role="tab" href="#c">Tanh Experiment</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="d-tab" data-toggle="tab" role="tab" href="#d">Identity Experiment</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="e-tab" data-toggle="tab" role="tab" href="#e">WGAN_2020</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="f-tab" data-toggle="tab" role="tab" href="#f">WGAN_2040</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="g-tab" data-toggle="tab" role="tab" href="#g">GAN_2020</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="h-tab" data-toggle="tab" role="tab" href="#h">GAN_2040</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="i-tab" data-toggle="tab" role="tab" href="#i">Baseline Mean</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="j-tab" data-toggle="tab" role="tab" href="#j">GAN 2020 Mean</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="k-tab" data-toggle="tab" role="tab" href="#k">Baseline Mean Norm</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="l-tab" data-toggle="tab" role="tab" href="#l">GAN 2020 Mean Norm</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="m-tab" data-toggle="tab" role="tab" href="#m">Bi-modal Experiment w0</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="n-tab" data-toggle="tab" role="tab" href="#n">Bi-modal Experiment w3</a>
+  </li>
+</ul>
+
+<div class="tab-content" id="tabContent">
+  <div class="tab-pane fade show active" id="a" role="tabpanel" aria-labelledby="a-tab">
+    <div class="embed-responsive embed-responsive-21by9">
+  <video class=".embed-responsive-item" controls>
+    <source src="Results/Baseline/gan.webm" type="video/webm">
+    <source src="Results/Baseline/gan.ogv" type="video/ogg">
+    <source src="Results/Baseline/gan.mp4" type="video/mp4">
+    I'm sorry; your browser doesn't support HTML5 video in WebM with VP8/VP9 or MP4 with H.264.
+  </video>
+</div>
+  <!-- <img src="Results/Baseline/Loss.png"> -->
+  </div>
+
+  <div class="tab-pane fade" id="b" role="tabpanel" aria-labelledby="b-tab">
+  <div class="embed-responsive embed-responsive-21by9">
+  <video class=".embed-responsive-item" controls>
+    <source src="Results/sigmoid_Experiment/gan.webm" type="video/webm">
+    <source src="Results/sigmoid_Experiment/gan.ogv" type="video/ogg">
+    <source src="Results/sigmoid_Experiment/gan.mp4" type="video/mp4">
+    I'm sorry; your browser doesn't support HTML5 video in WebM with VP8/VP9 or MP4 with H.264.
+  </video>
+</div></div>
+  <div class="tab-pane fade" id="c" role="tabpanel" aria-labelledby="c-tab">
+  <div class="embed-responsive embed-responsive-21by9">
+  <video class=".embed-responsive-item" controls>
+    <source src="Results/tanh_Experiment/gan.webm" type="video/webm">
+    <source src="Results/tanh_Experiment/gan.ogv" type="video/ogg">
+    <source src="Results/tanh_Experiment/gan.mp4" type="video/mp4">
+    I'm sorry; your browser doesn't support HTML5 video in WebM with VP8/VP9 or MP4 with H.264.
+  </video>
+</div></div>
+  <div class="tab-pane fade" id="d" role="tabpanel" aria-labelledby="d-tab">
+  <div class="embed-responsive embed-responsive-21by9">
+  <video class=".embed-responsive-item" controls>
+    <source src="Results/IdentityExperiment/gan.webm" type="video/webm">
+    <source src="Results/IdentityExperiment/gan.ogv" type="video/ogg">
+    <source src="Results/IdentityExperiment/gan.mp4" type="video/mp4">
+    I'm sorry; your browser doesn't support HTML5 video in WebM with VP8/VP9 or MP4 with H.264.
+  </video>
+</div></div>
+  <div class="tab-pane fade" id="e" role="tabpanel" aria-labelledby="e-tab">
+  <div class="embed-responsive embed-responsive-21by9">
+  <video class=".embed-responsive-item" controls>
+    <source src="Results/WGAN_2020/gan.webm" type="video/webm">
+    <source src="Results/WGAN_2020/gan.ogv" type="video/ogg">
+    <source src="Results/WGAN_2020/gan.mp4" type="video/mp4">
+    I'm sorry; your browser doesn't support HTML5 video in WebM with VP8/VP9 or MP4 with H.264.
+  </video>
+</div></div>
+  <div class="tab-pane fade" id="f" role="tabpanel" aria-labelledby="f-tab">
+    <div class="embed-responsive embed-responsive-21by9">
+  <video class=".embed-responsive-item" controls>
+    <source src="Results/WGAN_2040/gan.webm" type="video/webm">
+    <source src="Results/WGAN_2040/gan.ogv" type="video/ogg">
+    <source src="Results/WGAN_2040/gan.mp4" type="video/mp4">
+    I'm sorry; your browser doesn't support HTML5 video in WebM with VP8/VP9 or MP4 with H.264.
+  </video>
+</div>
+  </div>
+  <div class="tab-pane fade" id="g" role="tabpanel" aria-labelledby="g-tab">
+  <div class="embed-responsive embed-responsive-21by9">
+  <video class=".embed-responsive-item" controls>
+    <source src="Results/GAN_2020/gan.webm" type="video/webm">
+    <source src="Results/GAN_2020/gan.ogv" type="video/ogg">
+    <source src="Results/GAN_2020/gan.mp4" type="video/mp4">
+    I'm sorry; your browser doesn't support HTML5 video in WebM with VP8/VP9 or MP4 with H.264.
+  </video>
+</div></div>
+  <div class="tab-pane fade" id="h" role="tabpanel" aria-labelledby="h-tab">
+    <div class="embed-responsive embed-responsive-21by9">
+  <video class=".embed-responsive-item" controls>
+    <source src="Results/GAN_2040/gan.webm" type="video/webm">
+    <source src="Results/GAN_2040/gan.ogv" type="video/ogg">
+    <source src="Results/GAN_2040/gan.mp4" type="video/mp4">
+    I'm sorry; your browser doesn't support HTML5 video in WebM with VP8/VP9 or MP4 with H.264.
+  </video>
+</div>
+  </div>
+  <div class="tab-pane fade" id="i" role="tabpanel" aria-labelledby="i-tab">
+    <div class="embed-responsive embed-responsive-21by9">
+  <video class=".embed-responsive-item" controls>
+    <source src="Results/Baseline_mean2/gan.webm" type="video/webm">
+    <source src="Results/Baseline_mean2/gan.ogv" type="video/ogg">
+    <source src="Results/Baseline_mean2/gan.mp4" type="video/mp4">
+    I'm sorry; your browser doesn't support HTML5 video in WebM with VP8/VP9 or MP4 with H.264.
+  </video>
+</div>
+  </div>
+  <div class="tab-pane fade" id="j" role="tabpanel" aria-labelledby="j-tab">
+    <div class="embed-responsive embed-responsive-21by9">
+  <video class=".embed-responsive-item" controls>
+    <source src="Results/GAN_2020_mean2/gan.webm" type="video/webm">
+    <source src="Results/GAN_2020_mean2/gan.ogv" type="video/ogg">
+    <source src="Results/GAN_2020_mean2/gan.mp4" type="video/mp4">
+    I'm sorry; your browser doesn't support HTML5 video in WebM with VP8/VP9 or MP4 with H.264.
+  </video>
+</div>
+  </div>
+  <div class="tab-pane fade" id="k" role="tabpanel" aria-labelledby="k-tab">
+    <div class="embed-responsive embed-responsive-21by9">
+  <video class=".embed-responsive-item" controls>
+    <source src="Results/Baseline_mean2norm/gan.webm" type="video/webm">
+    <source src="Results/Baseline_mean2norm/gan.ogv" type="video/ogg">
+    <source src="Results/Baseline_mean2norm/gan.mp4" type="video/mp4">
+    I'm sorry; your browser doesn't support HTML5 video in WebM with VP8/VP9 or MP4 with H.264.
+  </video>
+</div>
+  </div>
+  <div class="tab-pane fade" id="l" role="tabpanel" aria-labelledby="l-tab">
+    <div class="embed-responsive embed-responsive-21by9">
+  <video class=".embed-responsive-item" controls>
+    <source src="Results/GAN_2020_mean2norm/gan.webm" type="video/webm">
+    <source src="Results/GAN_2020_mean2norm/gan.ogv" type="video/ogg">
+    <source src="Results/GAN_2020_mean2norm/gan.mp4" type="video/mp4">
+    I'm sorry; your browser doesn't support HTML5 video in WebM with VP8/VP9 or MP4 with H.264.
+  </video>
+</div>
+  </div>
+  <div class="tab-pane fade" id="m" role="tabpanel" aria-labelledby="m-tab">
+    <div class="embed-responsive embed-responsive-21by9">
+  <video class=".embed-responsive-item" controls>
+    <source src="Results/BiModalExperiment_w0/gan.webm" type="video/webm">
+    <source src="Results/BiModalExperiment_w0/gan.ogv" type="video/ogg">
+    <source src="Results/BiModalExperiment_w0/gan.mp4" type="video/mp4">
+    I'm sorry; your browser doesn't support HTML5 video in WebM with VP8/VP9 or MP4 with H.264.
+  </video>
+</div>
+  </div>
+  <div class="tab-pane fade" id="n" role="tabpanel" aria-labelledby="n-tab">
+    <div class="embed-responsive embed-responsive-21by9">
+  <video class=".embed-responsive-item" controls>
+    <source src="Results/BiModalExperiment_w3/gan.webm" type="video/webm">
+    <source src="Results/BiModalExperiment_w3/gan.ogv" type="video/ogg">
+    <source src="Results/BiModalExperiment_w3/gan.mp4" type="video/mp4">
+    I'm sorry; your browser doesn't support HTML5 video in WebM with VP8/VP9 or MP4 with H.264.
+  </video>
+</div>
+  </div>
+</div>
+
+
+
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

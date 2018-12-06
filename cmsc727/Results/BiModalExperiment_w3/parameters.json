@@ -1,0 +1,1 @@
+{"name": "BiModalExperiment_w3", "num_epochs": 10000, "mb_size": 100, "x_dim": 3, "y_dim": 3, "learning_rate": 0.0001, "gen_layers": null, "gen_activation": "None", "disc_layers": [40, 1], "disc_activation": ["relu", "identity"], "width": 3, "ps": [1, 1]}
