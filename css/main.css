@@ -1,22 +1,60 @@
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
 
+rounded_box {
+    cursor: pointer;
+    border: 3px solid black;
+    font-size: 20px;
+    font-weight: 300;
+    border-radius: 25px;
+    padding: 0 25px 0 25px;
+    margin: 2px 0 2px 0;
+    height: fit-content;
+    text-align: center;
+    display: inline-block;
+}
 
+plus_box {
+    cursor: pointer;
+    border: 3px solid black;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 25px;
+    height: 36px;
+    width: 36px;
+    text-align: center;
+    display: inline-block;
+}
 
+rounded_container {
+    transform: rotate(0deg);
+    transform-origin: left center;
+    border: 3px solid #609460;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: rgba(200,200,200,0.5);
+    height: fit-content;
+    display: inline-block;
+}
 
+rounded_box.yellow {
+    background-color: rgb(253, 239, 224);
+}
 
+rounded_box.blue {
+    background-color: rgb(230, 241, 253);
+}
 
+rounded_box.green {
+    background-color: rgb(238, 250, 213);
+}
 
-
-
-
-
-
-
-
-
-
+plus_box.grey, rounded_box.grey {
+    background-color: grey;
+}
