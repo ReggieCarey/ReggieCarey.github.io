@@ -19,105 +19,144 @@
     <title>Reginald Carey : Biologically Inspired Artificial General Intelligence</title>
 </head>
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                    aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Biologically Inspired Artifical General Intelligence</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <form class="navbar-form navbar-right" role="form">
-                <div class="form-group">
-                    <input type="text" placeholder="Email" class="form-control">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
                 </div>
-                <div class="form-group">
-                    <input type="password" placeholder="Password" class="form-control">
-                </div>
-                <button type="submit" class="btn btn-success">Sign in</button>
-            </form>
-        </div><!--/.navbar-collapse -->
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
     </div>
 </nav>
 
-<!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron">
-    <h1 class="display-4">My Random Musings On What Ever Interests Me</h1>
-    <p>
-        Greetings I'm Reginald Carey and my research focuses on biologically inspired artificial general intellence
-    </p>
-    <p>
-        Specifically, I'm developing models of memory consolidation and contextual awareness that align with corresponding
-        frameworks in the brain and then taking those principles to constuct artifical analogues. Of principle importance
-        in this endeavor is building out a model of attention. Attention is the ability to filter out irrellevent stimulus in
-        order to maximize performance on some task. It appears that an attentional framework is present in many sensory
-        modalities. We can attend to visual stimulus, focus on somatosensory input, disregard noise in order to attend
-        to someone speaking. We can also learn to not attend to certain stimulus - persons in microgravity learn to first
-        discount vestibular input, then begin to understand the altered input patterns. Vestibular inputs that would lead to
-        body position corrections on Earth are largely ignored by the experienced space fairer while in a microgravity
-        environment.
-    </p>
-    <h1 class="display-4">Modeling Synaptic Inputs</h1>
-    <p>
-        $$\tau_m\frac{dV}{dt} = -\left(\left(V-E_L\right)+g_s\left(V-E_s\right)r_m\right)+I_eR_m$$
-    </p>
-    <p>
-        This equation tells us that the change in membrane potential of the post synaptic neuron is driven
-        by the current voltage minus the leak potential \((V-E_L)\) (LEAK TERM) plus the synaptic
-        contribution which is
-        \(g_s(V-E_s)r_m\) where \(g_s\) is the synaptic conductance and \(V-E_s\) is the voltage
-        minus the synapse potential. E is the equilibrium protential.
-    </p>
-    <p>
-        for an excitatory synapse the \(E_s > E_L\) for an inhibitory synapse \(E_s &lt; E_L\).
-    </p>
-    <p>
-        Synaptic conductance \(g_s\) is the probability of postsynaptic channel opening
-        (= fraction of channels opened)
-    </p>
-    <p>
-        $$g_s = g_{s,max}P_{rel}P_s$$
-    </p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a>
-</div>
-<div class="container">
-    <!-- Example row of columns -->
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio
-                dui. </p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+<!--    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">-->
+<!--    <div class="container">-->
+<!--        <div class="navbar-header">-->
+<!--            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"-->
+<!--                    aria-controls="navbar">-->
+<!--                <span class="sr-only">Toggle navigation</span>-->
+<!--                <span class="icon-bar"></span>-->
+<!--                <span class="icon-bar"></span>-->
+<!--                <span class="icon-bar"></span>-->
+<!--            </button>-->
+<!--            <a class="navbar-brand" href="#">Biologically Inspired Artifical General Intelligence</a>-->
+<!--        </div>-->
+<!--        <div id="navbar" class="navbar-collapse collapse">-->
+<!--            <form class="navbar-form navbar-right" role="form">-->
+<!--                <div class="form-group">-->
+<!--                    <input type="text" placeholder="Email" class="form-control">-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <input type="password" placeholder="Password" class="form-control">-->
+<!--                </div>-->
+<!--                <button type="submit" class="btn btn-success">Sign in</button>-->
+<!--            </form>-->
+<!--        </div>&lt;!&ndash;/.navbar-collapse &ndash;&gt;-->
+<!--    </div>-->
+<!--</nav>-->
+
+<main role="main">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <h1 class="display-4">My Random Musings On What Ever Interests Me</h1>
+        <p>
+            Greetings I'm Reginald Carey and my research focuses on biologically inspired artificial general intellence
+        </p>
+        <p>
+            Specifically, I'm developing models of memory consolidation and contextual awareness that align with corresponding
+            frameworks in the brain and then taking those principles to constuct artifical analogues. Of principle importance
+            in this endeavor is building out a model of attention. Attention is the ability to filter out irrellevent stimulus in
+            order to maximize performance on some task. It appears that an attentional framework is present in many sensory
+            modalities. We can attend to visual stimulus, focus on somatosensory input, disregard noise in order to attend
+            to someone speaking. We can also learn to not attend to certain stimulus - persons in microgravity learn to first
+            discount vestibular input, then begin to understand the altered input patterns. Vestibular inputs that would lead to
+            body position corrections on Earth are largely ignored by the experienced space fairer while in a microgravity
+            environment.
+        </p>
+        <h1 class="display-4">Modeling Synaptic Inputs</h1>
+        <p>
+            $$\tau_m\frac{dV}{dt} = -\left(\left(V-E_L\right)+g_s\left(V-E_s\right)r_m\right)+I_eR_m$$
+        </p>
+        <p>
+            This equation tells us that the change in membrane potential of the post synaptic neuron is driven
+            by the current voltage minus the leak potential \((V-E_L)\) (LEAK TERM) plus the synaptic
+            contribution which is
+            \(g_s(V-E_s)r_m\) where \(g_s\) is the synaptic conductance and \(V-E_s\) is the voltage
+            minus the synapse potential. E is the equilibrium protential.
+        </p>
+        <p>
+            for an excitatory synapse the \(E_s > E_L\) for an inhibitory synapse \(E_s &lt; E_L\).
+        </p>
+        <p>
+            Synaptic conductance \(g_s\) is the probability of postsynaptic channel opening
+            (= fraction of channels opened)
+        </p>
+        <p>
+            $$g_s = g_{s,max}P_{rel}P_s$$
+        </p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a>
+    </div>
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                    condimentum
+                    nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio
+                    dui. </p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                    condimentum
+                    nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio
+                    dui. </p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Heading</h2>
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis
+                    euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa
+                    justo
+                    sit amet risus.</p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            </div>
         </div>
-        <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio
-                dui. </p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis
-                euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
-                sit amet risus.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
+
+        <hr>
     </div>
 
-    <hr>
-</div>
-
-<!-- container -->
-<div class="container">
-    <div class="row">
-        <div style="height: 110px;">
+    <!-- container -->
+    <div class="container">
+        <div class="row">
+            <div style="height: 110px;">
         <span style="border:3px solid #609460; border-radius: 25px;padding:0px 25px 25px 25px; background-color: #c0c0c0;">
             <span style="cursor: pointer; border: 3px solid black; font-size: 26px; font-weight: 400; border-radius: 25px; padding: 4px 25px 4px 25px; text-align: center; background-color: #c0b0a0">Add&nbsp;&&nbsp;Normalize</span>
             <span style=" cursor: pointer;
@@ -145,252 +184,259 @@
     padding: 0px 10px 4px 10px;
     background-color: #a0a0a0;">+</span>
         </span>
+            </div>
+
+            <h2>Basic Synapse Model</h2>
+            <ul>
+                <li>Assume \(P_{rel}=1\)
+                <li>Model the effect of a single spike input on \(P_s\) &lt;- fraction of channels opened
+                <li>Kinetic Model of postsynaptic channels
+            </ul>
+            <p>Assume that \(\alpha_s\) represents the opening rate of channels</p>
+            <p>Assume that \(\beta_s\) represents the closing rate of channels</p>
+            <p>\(P_s\) is of course the faction of channels currently open and the \((1-P_s)\) is the
+                fraction of channels closed.</p>
+            <p>The equation for the change in the probability of the fraction of open channels
+                is given by the equation</p>
+            <p>$$\frac{dP_s}{dt}=\alpha_s(1-P_s)-\beta_sP_s$$</p>
+
+            <h2>What does \(P_s\) look like over time given a spike?</h2>
+            <p>Exponential function \(K(t)=e^{-\frac{t}{\tau_s}}\) gives reasonable fit for some synapes</p>
+            <p>Others can be fit using "Alpha" function: \(\alpha(t)=\frac{t}{\tau_{peak}}\cdot
+                e^{1-\left(\frac{t}{\tau_{peak}}\right)}\)</p>
+
+            <h2>Perceptron Learning Rule</h2>
+            <p>$$v = \Theta\left(\sum_i w_iu_i-\mu\right)$$</p>
+            <p>$$\Delta w_i=\epsilon(v^d - v)u_i$$</p>
+            <p>$$\Delta \mu=-\epsilon(v^d - v)$$</p>
+        </div>
+    </div>
+    <!-- /container -->
+
+    <!-- container -->
+    <div class="container">
+        <div class="row">
+            <p class="col-1" style="background-color: #aaaaaa">&nbsp;</p>
+            <p class="col" style="background-color: #dddddd">
+                a = (4 pi / 3) G p r
+                $$a = \frac{4\pi}{3}G p r$$
+
+                a = accelleration, Earth: \(9.8 m/s^2\) <br>
+                p = density, Earth: \(5510 kg/m^3\), or \(5.51 g/cm^3\) <br>
+                r = radius, Earth: \(6,371,000m\) <br>
+
+                5.51^2 = 30.4
+                <!--            <br>-->
+                <!--        <div class="col" style="height: 210px;">-->
+                <!--            <p>-->
+                <rounded_container>
+                    <rounded_box class="green">Add&nbsp;&&nbsp;Normalize</rounded_box>
+                    <rounded_box class="yellow">Self-Attention</rounded_box>
+                    <br>
+                    <rounded_box class="blue">Feed&nbsp;Forward</rounded_box>
+                    <plus_box class="grey">+</plus_box>
+                </rounded_container>
+                <!--            </p>-->
+                <!--        </div>-->
+            </p>
+            <p class="col-1" style="background-color: #aaaaaa">&nbsp;</p>
         </div>
 
-        <h2>Basic Synapse Model</h2>
-        <ul>
-            <li>Assume \(P_{rel}=1\)
-            <li>Model the effect of a single spike input on \(P_s\) &lt;- fraction of channels opened
-            <li>Kinetic Model of postsynaptic channels
-        </ul>
-        <p>Assume that \(\alpha_s\) represents the opening rate of channels</p>
-        <p>Assume that \(\beta_s\) represents the closing rate of channels</p>
-        <p>\(P_s\) is of course the faction of channels currently open and the \((1-P_s)\) is the
-            fraction of channels closed.</p>
-        <p>The equation for the change in the probability of the fraction of open channels
-            is given by the equation</p>
-        <p>$$\frac{dP_s}{dt}=\alpha_s(1-P_s)-\beta_sP_s$$</p>
+        <hr>
 
-        <h2>What does \(P_s\) look like over time given a spike?</h2>
-        <p>Exponential function \(K(t)=e^{-\frac{t}{\tau_s}}\) gives reasonable fit for some synapes</p>
-        <p>Others can be fit using "Alpha" function: \(\alpha(t)=\frac{t}{\tau_{peak}}\cdot
-            e^{1-\left(\frac{t}{\tau_{peak}}\right)}\)</p>
+        <row>
+            <p class="col">
+            <h1>Norms</h1>
+            <ol>
+                <li>$|x|>0$ when $x \ne 0$ and $|x|=0$ iff $x=0$.</li>
+                <li>$|kx|=|k||x|$ for any scalar $k$.</li>
+                <li>$|x+y| \le |x|+|y|$.</li>
+            </ol>
+            </p>
+            <p class="col">
+            <h1>Measuring Similarity Between Vectors of Different Lengths</h1>
+            How does one get a sense of how two vectors compare if they are of different lengths?
+            To get to the core of this question, we first start with the idea of comparing vectors of the same length.
+            The primary tool used for this type of comparison is the norm.
+            The most common norm to evoke is the Euclidean or L2 norm.
+            There are many ways to define a norm and we will use the L2 norm as our starting point.
+            It can be descibed with the following equation:
 
-        <h2>Perceptron Learning Rule</h2>
-        <p>$$v = \Theta\left(\sum_i w_iu_i-\mu\right)$$</p>
-        <p>$$\Delta w_i=\epsilon(v^d - v)u_i$$</p>
-        <p>$$\Delta \mu=-\epsilon(v^d - v)$$</p>
+            $$\text{EuclideanNorm}(x) = ||x||^2 = \text{norm}(x,p=2) = \left ( \sum_{i=1}^{n} {|x_i|}^p \right )^{1/p}$$
+            </p>
+            <p class="col">
+                Let's look at how this norm works for vectors of varying lengths (assume Euclidean Norm):
+                $$\text{norm}(3,4) = \left ( |3|^2 + |4|^2 \right )^{1/2} = 5.0$$
+                $$\text{norm}(3,4,0) = \left ( |3|^2 + |4|^2 + |0|^2 \right )^{1/2} = 5.0$$
+                $$\text{norm}(3,4,0,0) = \left ( |3|^2 + |4|^2 + |0|^2 + |0|^2 \right )^{1/2} = 5.0$$
+                That seems reasonable.
+                The equations playout and provide values that conform to the definition of a norm.
+            </p>
+            <p class="col">
+                Can you compare these three results?
+                Is there any validity in it?
+            </p>
+            <p class="col">
+                Generally when one wants to compare two vectors we can utilize the *dot-product* of the two vectors.
+                We do a piece wise product of the two (same length) vectors and then sum the products to produce the result.
+            </p>
+            <p class="col">
+                Another approach might be to sum the piecewise difference between the vectors.
+            </p>
+            <p class="col">
+                One could also return the sum the piecewise squared difference (mean squared error) scaled by the inverse vector
+                length.
+            </p>
+            <p class="col">
+                Yet another approach is to utilize the norm to scale both vectors to create unit vectors (vectors whose magnitude is
+                1).
+                We then compute the dot product of the unit vectors. The result can be shown to be $cos{\theta}$ where $\theta$ is
+                the
+                angle between the two vectors.
+            </p>
+            <p class="col">
+                This last approach is extremely appealing because it provides a value that can be compared to other results for
+                vectors
+                of the same length.
+            </p>
+            <p class="col">
+                So what's wrong with trying to compare the magnitude of vectors with different lengths? As we have seen, the numbers
+                look reasonable $||(3,4)||^2 = 5$, $||(3,4,0)||^2 = 5$. So what's wrong? These norms ignore the impact of
+                dimensionality.
+            </p>
+            <p class="col">
+                It comes down to the interpretation of a vector. If we have a 1 dimensional vector (scalar). Then we can say that
+                its
+                magnitude is the absolute value of that vector. This interpretation for magnitude (norm) has been extended to to
+                vectors
+                of dimension greater than 1.
+            </p>
+            <p class="col">
+                Let's restrict ourselves to vectors whose components are either 0 or 1. In other words, lets restrict ourselves to
+                just the quantal vectors.
+
+                $||(0)||^2 = 0$ and $||(1)||^2 = 1$. $||(0,0)||^2 = 0$ but:
+                $$
+                ||(1,1)||^2 = \sqrt{2}
+                $$
+                $$
+                ||(1,1,1)||^2 = \sqrt{3}
+                $$
+                These vectors form the vertices of an n-dimensional cube. In any such cube, the vector of all 0's has the lowest
+                magnitude (0) and the vector of all ones has the highest magnitude. We simply need to embue vectors with a different
+                sense of unitarity, one that is consistent regardless of dimensionality. What does it mean to be a unitary vector?
+            </p>
+            <p class="col">
+                Well we could use the euclidean norm and end up with $( ||1||^2 + ||1||^2 )^{1/2} = \sqrt{2}$. This is so common a
+                result that we don't even question its validity - it is valid. However, for our purposes, this norm is insufficient.
+            </p>
+            <p class="col">
+                While all vectors that have 0 as each component must have a magnitude of 0, by definition of a norm, (they form a
+                group), there is no group using this class of norm for vectors whose components are not necessarily all 0. We will
+                form such a group by constructing a new norm. The Carey Norm (this norm may have been codified under other names in
+                the past but I have not found reference to them)
+            </p>
+            <p class="col">
+                Let
+                $$
+                \text{CareyNorm}(x,p) = ||x||_{p-cn} = \frac{||x||_p}{\sqrt{n}}\text{, }x\in\mathbb{R}^n
+                $$
+                $$
+                \text{CareyNorm}(x) = ||x||_{cn} = \text{CareyNorm}(x,2) = ||x||_{2-cn} = \frac{||x||_2}{\sqrt{n}}\text{,
+                }x\in\mathbb{R}^n \\
+                $$
+            </p>
+            <p class="col">
+                What kind of results to we get from this norm?
+
+                $||(0)||_{cn} = 0$ and $||(1)||_{cn} = 1$. $||(0,0)||_{cn} = 0$ but:
+                $$
+                ||(1,1)||_{cn} = 1
+                $$
+                $$
+                ||(1,1,1)||_{cn} = 1
+                $$
+
+                We now have norm that provides a group at two points, the vector of all 0 components has a magnitude of 0 and a
+                vector of al 1 components has a magnitude of 1. Note that all we are doing is scaling a norm by the square root
+                of the vector length. Thus any p-norm can be converted to a p-CareyNorm.
+            </p>
+            <p class="col">
+                Let's see this norm in action:
+                $$\text{norm}(3,4) = \left ( |3|^2 + |4|^2 \right )^{1/2} = 5.0$$
+                $$\text{CareyNorm}(3,4) = \frac{ \left ( |3|^2 + |4|^2 \right )^{1/2} }{\sqrt{2}} = 3.53553390593$$
+                Oh dear! Is that a norm by the definitions of norm? We'll have to check.
+                $$\text{norm}(3,4,0) = \left ( |3|^2 + |4|^2 + |0|^2 \right )^{1/2} = 5.0$$
+                $$\text{CareyNorm}(3,4,0) = \frac{ \left ( |3|^2 + |4|^2 + |0|^2 \right )^{1/2} }{\sqrt{3}} = 2.88675134595$$
+                That's an interesting result.
+                $$\text{norm}(3,4,0,0) = \left ( |3|^2 + |4|^2 + |0|^2 + |0|^2 \right )^{1/2} = 5.0$$
+                $$\text{CareyNorm}(3,4,0,0) = \frac{ \left ( |3|^2 + |4|^2 + |0|^2 + |0|^2 \right )^{1/2} }{\sqrt{4}} = 2.5$$
+            </p>
+            <p class="col">
+                Lets take a look at the vector $x = (3,4)$. This is a convenient short
+                hand to $x = (3\hat{i}, 4\hat{j})$ or $x = 3\hat{i} + 4\hat{j}$.
+                Consider vectors $(3),(4),(3,0),(0,4)$.
+                What are the CareyNorms of these vectors?
+                $$
+                \text{CareyNorm}(3) = \frac{(|3|^2)^{1/2}}{\sqrt{1}} = 3
+                $$
+                $$
+                \text{CareyNorm}(4) = \frac{(|4|^2)^{1/2}}{\sqrt{1}} = 4
+                $$
+                $$
+                \text{CareyNorm}(3,0) = \frac{(|3|^2+|0|^2)^{1/2}}{\sqrt{2}} = 2.12132034356
+                $$
+                $$
+                \text{CareyNorm}(0,4) = \frac{(|0|^2+|4|^2)^{1/2}}{\sqrt{2}} = 2.82842712475
+                $$
+                Lets take these last two results to validate $\text{CareyNorm}(3,4)=3.53553390593$
+                $$
+                (2.12132034356^2 + 2.82842712475^2)^{1/2} = (4.5 + 8)^{1/2} = 3.53553390593
+                $$
+                Our CareyNorm appears to be consistent!
+            </p>
+            <p class="col">
+            <h2>Does the CareyNorm represent a true norm?</h2>
+            <ol>
+                <li>$|x|>0$ when $x \ne 0$ and $|x|=0$ iff $x=0$.</li>
+                <li>$|kx|=|k||x|$ for any scalar $k$.</li>
+                <li>$|x+y| \le |x|+|y|$ iff $x$ and $y$ are of the same dimension.</li>
+            </ol>
+            Yes it does. We invoke $|kx|=|k||x|$ for any scalar $k$.
+            With CareyNorm we scale by the inverse square root of dimensionality, $k = n^{-1/2}\text{, }x\in\mathbb{R}^n$
+            </p>
+            <h4>UNFORTUNATELY WE MUST DEFINE ADDITION AND MULTIPLICATION WITH THIS NEW NORM TO FORM AN ALGEBRA</h4>
+            <p class="col">
+                What does it mean to add two vectors of different dimensions?<br>
+                (3) + (0,4) -> ??<br><br>
+                One approach is to extend the shorter dimension by appending 0's<br>
+                (3) + (0,4) -> (3,[0]) + (0,4) --> (3,4)<br>
+                This has the effect of ignoring all dimensions beyond the size of the shorter dimension<br><br>
+                Another approach is to extend the shorter dimension by appending 1's<br>
+                (3) + (0,4) -> (3,[1]) + (0,4) --> (3,5)<br>
+                This has the effect of summing the extra dimensions<br><br>
+            </p>
+        </row>
+        <footer>
+            <p>&copy; Reginald B. Carey 2019</p>
+        </footer>
     </div>
-</div>
-<!-- /container -->
+    <!-- /container -->
 
-<!-- container -->
-<div class="container">
-    <div class="row">
-        <p class="col-1" style="background-color: #aaaaaa">&nbsp;</p>
-        <p class="col" style="background-color: #dddddd">
-            a = (4 pi / 3) G p r
-            $$a = \frac{4\pi}{3}G p r$$
+    <script src="//polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="js/main.js"></script>
+    <script id="MathJax-script"
+            async src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 
-            a = accelleration, Earth: \(9.8 m/s^2\) <br>
-            p = density, Earth: \(5510 kg/m^3\), or \(5.51 g/cm^3\) <br>
-            r = radius, Earth: \(6,371,000m\) <br>
-
-            5.51^2 = 30.4
-            <!--            <br>-->
-            <!--        <div class="col" style="height: 210px;">-->
-            <!--            <p>-->
-            <rounded_container>
-                <rounded_box class="green">Add&nbsp;&&nbsp;Normalize</rounded_box>
-                <rounded_box class="yellow">Self-Attention</rounded_box>
-                <br>
-                <rounded_box class="blue">Feed&nbsp;Forward</rounded_box>
-                <plus_box class="grey">+</plus_box>
-            </rounded_container>
-            <!--            </p>-->
-            <!--        </div>-->
-        </p>
-        <p class="col-1" style="background-color: #aaaaaa">&nbsp;</p>
-    </div>
-
-    <hr>
-
-    <row>
-        <p class="col">
-        <h1>Norms</h1>
-        <ol>
-            <li>$|x|>0$ when $x \ne 0$ and $|x|=0$ iff $x=0$.</li>
-            <li>$|kx|=|k||x|$ for any scalar $k$.</li>
-            <li>$|x+y| \le |x|+|y|$.</li>
-        </ol>
-        </p>
-        <p class="col">
-        <h1>Measuring Similarity Between Vectors of Different Lengths</h1>
-        How does one get a sense of how two vectors compare if they are of different lengths?
-        To get to the core of this question, we first start with the idea of comparing vectors of the same length.
-        The primary tool used for this type of comparison is the norm.
-        The most common norm to evoke is the Euclidean or L2 norm.
-        There are many ways to define a norm and we will use the L2 norm as our starting point.
-        It can be descibed with the following equation:
-
-        $$\text{EuclideanNorm}(x) = ||x||^2 = \text{norm}(x,p=2) = \left ( \sum_{i=1}^{n} {|x_i|}^p \right )^{1/p}$$
-        </p>
-        <p class="col">
-            Let's look at how this norm works for vectors of varying lengths (assume Euclidean Norm):
-            $$\text{norm}(3,4) = \left ( |3|^2 + |4|^2 \right )^{1/2} = 5.0$$
-            $$\text{norm}(3,4,0) = \left ( |3|^2 + |4|^2 + |0|^2 \right )^{1/2} = 5.0$$
-            $$\text{norm}(3,4,0,0) = \left ( |3|^2 + |4|^2 + |0|^2 + |0|^2 \right )^{1/2} = 5.0$$
-            That seems reasonable.
-            The equations playout and provide values that conform to the definition of a norm.
-        </p>
-        <p class="col">
-            Can you compare these three results?
-            Is there any validity in it?
-        </p>
-        <p class="col">
-            Generally when one wants to compare two vectors we can utilize the *dot-product* of the two vectors.
-            We do a piece wise product of the two (same length) vectors and then sum the products to produce the result.
-        </p>
-        <p class="col">
-            Another approach might be to sum the piecewise difference between the vectors.
-        </p>
-        <p class="col">
-            One could also return the sum the piecewise squared difference (mean squared error) scaled by the inverse vector length.
-        </p>
-        <p class="col">
-            Yet another approach is to utilize the norm to scale both vectors to create unit vectors (vectors whose magnitude is 1).
-            We then compute the dot product of the unit vectors. The result can be shown to be $cos{\theta}$ where $\theta$ is the
-            angle between the two vectors.
-        </p>
-        <p class="col">
-            This last approach is extremely appealing because it provides a value that can be compared to other results for vectors
-            of the same length.
-        </p>
-        <p class="col">
-            So what's wrong with trying to compare the magnitude of vectors with different lengths? As we have seen, the numbers
-            look reasonable $||(3,4)||^2 = 5$, $||(3,4,0)||^2 = 5$. So what's wrong? These norms ignore the impact of
-            dimensionality.
-        </p>
-        <p class="col">
-            It comes down to the interpretation of a vector. If we have a 1 dimensional vector (scalar). Then we can say that its
-            magnitude is the absolute value of that vector. This interpretation for magnitude (norm) has been extended to to vectors
-            of dimension greater than 1.
-        </p>
-        <p class="col">
-            Let's restrict ourselves to vectors whose components are either 0 or 1. In other words, lets restrict ourselves to
-            just the quantal vectors.
-
-            $||(0)||^2 = 0$ and $||(1)||^2 = 1$. $||(0,0)||^2 = 0$ but:
-            $$
-            ||(1,1)||^2 = \sqrt{2}
-            $$
-            $$
-            ||(1,1,1)||^2 = \sqrt{3}
-            $$
-            These vectors form the vertices of an n-dimensional cube. In any such cube, the vector of all 0's has the lowest
-            magnitude (0) and the vector of all ones has the highest magnitude. We simply need to embue vectors with a different
-            sense of unitarity, one that is consistent regardless of dimensionality. What does it mean to be a unitary vector?
-        </p>
-        <p class="col">
-            Well we could use the euclidean norm and end up with $( ||1||^2 + ||1||^2 )^{1/2} = \sqrt{2}$. This is so common a
-            result that we don't even question its validity - it is valid. However, for our purposes, this norm is insufficient.
-        </p>
-        <p class="col">
-            While all vectors that have 0 as each component must have a magnitude of 0, by definition of a norm, (they form a
-            group), there is no group using this class of norm for vectors whose components are not necessarily all 0. We will
-            form such a group by constructing a new norm. The Carey Norm (this norm may have been codified under other names in
-            the past but I have not found reference to them)
-        </p>
-        <p class="col">
-            Let
-            $$
-            \text{CareyNorm}(x,p) = ||x||_{p-cn} = \frac{||x||_p}{\sqrt{n}}\text{, }x\in\mathbb{R}^n
-            $$
-            $$
-            \text{CareyNorm}(x) = ||x||_{cn} = \text{CareyNorm}(x,2) = ||x||_{2-cn} = \frac{||x||_2}{\sqrt{n}}\text{,
-            }x\in\mathbb{R}^n \\
-            $$
-        </p>
-        <p class="col">
-            What kind of results to we get from this norm?
-
-            $||(0)||_{cn} = 0$ and $||(1)||_{cn} = 1$. $||(0,0)||_{cn} = 0$ but:
-            $$
-            ||(1,1)||_{cn} = 1
-            $$
-            $$
-            ||(1,1,1)||_{cn} = 1
-            $$
-
-            We now have norm that provides a group at two points, the vector of all 0 components has a magnitude of 0 and a
-            vector of al 1 components has a magnitude of 1. Note that all we are doing is scaling a norm by the square root
-            of the vector length. Thus any p-norm can be converted to a p-CareyNorm.
-        </p>
-        <p class="col">
-            Let's see this norm in action:
-            $$\text{norm}(3,4) = \left ( |3|^2 + |4|^2 \right )^{1/2} = 5.0$$
-            $$\text{CareyNorm}(3,4) = \frac{ \left ( |3|^2 + |4|^2 \right )^{1/2} }{\sqrt{2}} = 3.53553390593$$
-            Oh dear! Is that a norm by the definitions of norm? We'll have to check.
-            $$\text{norm}(3,4,0) = \left ( |3|^2 + |4|^2 + |0|^2 \right )^{1/2} = 5.0$$
-            $$\text{CareyNorm}(3,4,0) = \frac{ \left ( |3|^2 + |4|^2 + |0|^2 \right )^{1/2} }{\sqrt{3}} = 2.88675134595$$
-            That's an interesting result.
-            $$\text{norm}(3,4,0,0) = \left ( |3|^2 + |4|^2 + |0|^2 + |0|^2 \right )^{1/2} = 5.0$$
-            $$\text{CareyNorm}(3,4,0,0) = \frac{ \left ( |3|^2 + |4|^2 + |0|^2 + |0|^2 \right )^{1/2} }{\sqrt{4}} = 2.5$$
-        </p>
-        <p class="col">
-            Lets take a look at the vector $x = (3,4)$. This is a convenient short
-            hand to $x = (3\hat{i}, 4\hat{j})$ or $x = 3\hat{i} + 4\hat{j}$.
-            Consider vectors $(3),(4),(3,0),(0,4)$.
-            What are the CareyNorms of these vectors?
-            $$
-            \text{CareyNorm}(3) = \frac{(|3|^2)^{1/2}}{\sqrt{1}} = 3
-            $$
-            $$
-            \text{CareyNorm}(4) = \frac{(|4|^2)^{1/2}}{\sqrt{1}} = 4
-            $$
-            $$
-            \text{CareyNorm}(3,0) = \frac{(|3|^2+|0|^2)^{1/2}}{\sqrt{2}} = 2.12132034356
-            $$
-            $$
-            \text{CareyNorm}(0,4) = \frac{(|0|^2+|4|^2)^{1/2}}{\sqrt{2}} = 2.82842712475
-            $$
-            Lets take these last two results to validate $\text{CareyNorm}(3,4)=3.53553390593$
-            $$
-            (2.12132034356^2 + 2.82842712475^2)^{1/2} = (4.5 + 8)^{1/2} = 3.53553390593
-            $$
-            Our CareyNorm appears to be consistent!
-        </p>
-        <p class="col">
-        <h2>Does the CareyNorm represent a true norm?</h2>
-        <ol>
-            <li>$|x|>0$ when $x \ne 0$ and $|x|=0$ iff $x=0$.</li>
-            <li>$|kx|=|k||x|$ for any scalar $k$.</li>
-            <li>$|x+y| \le |x|+|y|$ iff $x$ and $y$ are of the same dimension.</li>
-        </ol>
-        Yes it does. We invoke $|kx|=|k||x|$ for any scalar $k$.
-        With CareyNorm we scale by the inverse square root of dimensionality, $k = n^{-1/2}\text{, }x\in\mathbb{R}^n$
-        </p>
-        <h4>UNFORTUNATELY WE MUST DEFINE ADDITION AND MULTIPLICATION WITH THIS NEW NORM TO FORM AN ALGEBRA</h4>
-        <p class="col">
-            What does it mean to add two vectors of different dimensions?<br>
-            (3) + (0,4) -> ??<br><br>
-            One approach is to extend the shorter dimension by appending 0's<br>
-            (3) + (0,4) -> (3,[0]) + (0,4) --> (3,4)<br>
-            This has the effect of ignoring all dimensions beyond the size of the shorter dimension<br><br>
-            Another approach is to extend the shorter dimension by appending 1's<br>
-            (3) + (0,4) -> (3,[1]) + (0,4) --> (3,5)<br>
-            This has the effect of summing the extra dimensions<br><br>
-        </p>
-    </row>
-    <footer>
-        <p>&copy; Reginald B. Carey 2019</p>
-    </footer>
-</div>
-<!-- /container -->
-
-<script src="//polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script src="js/main.js"></script>
-<script id="MathJax-script"
-        async src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+</main>
 </body>
 </html>
